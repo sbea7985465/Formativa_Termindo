@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+
+    .imagen img{
+      width: 90px;
+      height: 80px;
+    }
+    footer {
+      display: flex;
+      align-items: center; /* Alinea la imagen y el contenido verticalmente */
+    }
+
+    footer img {
+      width: 150px;
+      height: 150px;
+      margin-right: 20px; 
+    }
+
+    .contenido {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    
+
+  </style>
+  
+  <div class="navegador">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="imagen">
+          <img src="assets/img/logo.png" alt="logo">
+        </div>
+      
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"  aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/inicio">inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/ubicanos">ubicanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacto">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  
+</body>
+</html>
+
+<router-outlet />
+<footer>
+  <img src="assets/img/logo.png" alt="">
+  <div class="contenido">
+    <h3>Innovared</h3>
+    <p>Numero: 99653526</p> 
+  </div>
+</footer>
